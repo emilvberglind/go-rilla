@@ -10,7 +10,7 @@ import (
 func GetHandler(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Content-Type", "application/json")
 	response.WriteHeader(http.StatusOK)
-	response.Write([]byte(`{"message": "Doing Things"}`))
+	response.Write([]byte(`{"message": "Doing Things 2"}`))
 }
 
 func main() {
