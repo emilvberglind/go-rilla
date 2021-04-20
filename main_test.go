@@ -24,7 +24,7 @@ func TestHealthCheckHandler(t *testing.T) {
 	}
 
 	// Check the response body is what we expect.
-	expected := `{"message": "Doing Things"}`
+	expected := `{"message": "Doing Things 2"}`
 	if rr.Body.String() != expected {
 		t.Errorf("unexpected body: got %v want %v",
 			rr.Body.String(), expected)
